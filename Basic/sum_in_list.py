@@ -1,7 +1,15 @@
-a= int(input("Enter the first numbers to get the sum of them: "))
-b= int(input("Enter the second numbers to get the sum of them: "))
-c= int(input("Enter the third numbers to get the sum of them: "))
-d= int(input("Enter the fourth numbers to get the sum of them: "))
+list_len = int(input("Enter the number of elemnts to be added: "))
 
-e=[a , b , c , d]
-print("The sum of numbers in the list is: ",sum(e))
+sum = 0
+
+input_list= []
+
+
+for _ in range(list_len):
+   
+   input_list.append(int(input("Enter the numbers: ")))
+
+
+for num in input_list:
+    sum = sum + num
+print("The sum of numbers in the List is: ",(sum))
